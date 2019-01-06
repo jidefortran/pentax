@@ -1,0 +1,51 @@
+<div class="container">
+<div class="row mt-5">
+    <div class=" col-9">
+        <nav aria-label="breadcrumb" class="mt-5">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a [routerLink]="['/home']">Home</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+            </ol>
+          </nav>
+<form class="mt-5 "  role ="form" [formGroup]="angularForm" novalidate>
+
+<h3 class="text-center display-3 mt-auto">Contact Us</h3>
+<div class="form-group">
+  <label for = "name">Full Name</label>
+  <input type="text" class="form-control" formControlName="name" placeholder=" Full Name" id="name">
+  <div *ngIf="angularForm.controls['name'].invalid && ( angularForm.controls['name'].dirty || angularForm.controls['name'].touched)" class="alert alert-danger">
+     <div *ngIf="angularForm.controls['name'].errors.required">
+
+     </div>
+
+  </div>
+  </div>
+
+  <div class="form-group">
+  <label for ="phone">Phone Number</label>
+  <input type="text" class="form-control"  formControlName="phone" placeholder=" Phone Number" id="phone">
+
+  <div *ngIf="angularForm.controls['phone'].invalid && ( angularForm.controls['phone'].dirty || angularForm.controls['phone'].touched)" class="alert alert-danger">
+    <div *ngIf="angularForm.controls['phone'].errors.required">
+</div>
+</div>
+</div>
+<div class="form-group">
+  <label for= "message">Message</label>
+  <textarea rows="3" placeholder="enter your address" class="form-control" formControlName="message" id="address"> </textarea>
+
+  <div *ngIf="angularForm.controls['message'].invalid && ( angularForm.controls['name'].dirty || angularForm.controls['message'].touched)" class="alert alert-danger">
+      <div *ngIf="angularForm.controls['message'].errors.required">
+</div>
+</div>
+</div>
+<button class="btn bg-success mt-2" [disabled]="angularForm.pristine || angularForm.invalid"> Submit </button>
+
+
+</form>
+
+      </div>
+      </div>
+    </div>

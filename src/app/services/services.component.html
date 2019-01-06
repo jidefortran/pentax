@@ -1,0 +1,92 @@
+
+<div class="container">
+    <div class="row mt-2">
+        <div class="col-12">
+            <nav aria-label="breadcrumb" class="mt-1">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a [routerLink]="['/home']">Home</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">Services</li>
+                </ol>
+              </nav>
+  <div class="jumbotron jumbotron-fluid">
+    <h1 class=" ml-5 mt-3">Services</h1>
+   <img src="assets/img/all.png " class="img-fluid img" >
+
+  </div>
+
+
+<router-outlet></router-outlet>
+
+<div class="card-group shadow ">
+    <div class="card shadow">
+    <h4 class="card-header"> <p>Programming</p> </h4>
+    <img class="card-img-top" src="assets/img/graphics.jpg" class="img-fluid"  >
+
+      <div class="card-body">
+
+
+        <p class="card-text"> We bring experiences to life through software design and development and product engineering. </p>
+        <a class=" btn btn-outline-info btn-lg" role="button" [routerLink]="['/services/program']"  > <i class="fas fa-home"> Find out more</i> </a>
+
+
+      </div>
+      </div>
+
+
+
+    <div class="card shadow">
+        <h4 class="card-header"> <p>Networking</p> </h4>
+        <img class="card-img-top" src="assets/img/2.jpg" class="img-fluid"  >
+
+          <div class="card-body">
+
+
+            <p class="card-text">We deliver projects involving network configuration, installation, and comprehensive network support for small and large organizations. </p>
+            <a class=" btn btn-info btn-lg" role="button" [routerLink]="['/services/network']"  > <i class="fas fa-home"> Find out more</i> </a>
+
+
+          </div>
+        </div>
+        <div class="card shadow">
+        <h4 class="card-header"> <p>Graphics Design</p> </h4>
+        <img class="card-img-top" src="assets/img/1.png " class="img-fluid"  >
+
+          <div class="card-body">
+
+
+            <p class="card-text">An innovative, award winning graphic design company, delivering successful design solutions.   </p>
+            <a class=" btn btn-outline-info btn-lg" role="button" [routerLink]="['/services/design']"  > <i class="fas fa-home"> Find out more</i> </a>
+
+
+          </div>
+        </div>
+        <div class="card shadow">
+            <h4 class="card-header"> <p>Business Analysis</p> </h4>
+            <img class="card-img-top" src="/assets/img/analysis vector.jpg" class="img-responsive" height="160px"  >
+
+              <div class="card-body">
+
+
+             <p class="card-text">Pentax Technologies identifies business needs and determining solutions to business problems.  </p>
+
+                <a class=" btn btn-info btn-lg" role="button" [routerLink]="['/services/business']"  > <i class="fas fa-home"> Find out more</i> </a>
+
+
+              </div>
+            </div>
+
+        </div>
+</div>
+</div></div>
+
+
+<div class="bg-primary mt-4 text-center" >
+    Our mission is to continuously review and list out the best technology companies helping you find and choose your ideal leading tech /digital partner easily.
+</div>
+
+
+
+
+
